@@ -1,11 +1,11 @@
 import { Suspense, lazy, ElementType } from "react";
-// import LoadingScreen from "../components/loading-screen";
+import LoadingScreen from "../components/loading-screen";
 
 // ----------------------------------------------------------------------
 
 const Loadable = (Component: ElementType) => () =>
   (
-    <Suspense fallback={<div />}>
+    <Suspense fallback={<LoadingScreen />}>
       <Component />
     </Suspense>
   );
@@ -14,3 +14,11 @@ const Loadable = (Component: ElementType) => () =>
 
 export const HomePage = Loadable(lazy(() => import("../pages/home/HomePage")));
 export const TopPage = Loadable(lazy(() => import("../pages/top/TopPage")));
+export const AlwaysSuspensePage = Loadable(
+  lazy(() => import("../pages/suspense/AlwaysSuspensePage"))
+);
+
+const dynamicImport = import("../pages/home/HomePage");
+console.log("check import return:", dynamicImport);
+const lazyLoad = lazy(() => dynamicImport);
+console.log("check lazy return:", lazyLoad);

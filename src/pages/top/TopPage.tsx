@@ -4,11 +4,25 @@ import { paths } from "../../routes/paths";
 
 const TopPage: React.FC = () => {
   const navigation = useNavigate();
-  const onClickNavigate = () => {
-    navigation(paths.home);
-  };
 
-  return <button onClick={onClickNavigate}>Home</button>;
+  return (
+    <>
+      <button
+        onClick={() => {
+          navigation(paths.home);
+        }}
+      >
+        Home
+      </button>
+      <button
+        onClick={() => {
+          navigation(paths.suspense.always);
+        }}
+      >
+        Always Suspense
+      </button>
+    </>
+  );
 };
 
 export default TopPage;
