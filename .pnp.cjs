@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-refresh", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:0.4.5"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:18.2.0"],\
+            ["react-error-boundary", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:4.0.12"],\
             ["typescript", "patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
             ["vite", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.0.12"]\
           ],\
@@ -334,6 +335,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@babel/core",\
             "@types/babel__core"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@babel/runtime", [\
+        ["npm:7.23.9", {\
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.23.9-3b96e23cc2-6bbebe8d27.zip/node_modules/@babel/runtime/",\
+          "packageDependencies": [\
+            ["@babel/runtime", "npm:7.23.9"],\
+            ["regenerator-runtime", "npm:0.14.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3021,6 +3032,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-error-boundary", [\
+        ["npm:4.0.12", {\
+          "packageLocation": "./.yarn/cache/react-error-boundary-npm-4.0.12-392de122fe-c4a14c2b60.zip/node_modules/react-error-boundary/",\
+          "packageDependencies": [\
+            ["react-error-boundary", "npm:4.0.12"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:4.0.12", {\
+          "packageLocation": "./.yarn/__virtual__/react-error-boundary-virtual-548b12a5cf/0/cache/react-error-boundary-npm-4.0.12-392de122fe-c4a14c2b60.zip/node_modules/react-error-boundary/",\
+          "packageDependencies": [\
+            ["react-error-boundary", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:4.0.12"],\
+            ["@babel/runtime", "npm:7.23.9"],\
+            ["@types/react", "npm:18.2.48"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-optimize-performance", [\
         ["workspace:.", {\
           "packageLocation": "./",\
@@ -3036,6 +3070,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-refresh", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:0.4.5"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:18.2.0"],\
+            ["react-error-boundary", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:4.0.12"],\
             ["typescript", "patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
             ["vite", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.0.12"]\
           ],\
@@ -3047,6 +3082,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-refresh-npm-0.14.0-78ef5eeb73-dc69fa8c99.zip/node_modules/react-refresh/",\
           "packageDependencies": [\
             ["react-refresh", "npm:0.14.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["regenerator-runtime", [\
+        ["npm:0.14.1", {\
+          "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.14.1-a6c97c609a-9f57c93277.zip/node_modules/regenerator-runtime/",\
+          "packageDependencies": [\
+            ["regenerator-runtime", "npm:0.14.1"]\
           ],\
           "linkType": "HARD"\
         }]\
