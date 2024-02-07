@@ -1,6 +1,6 @@
 import { m } from "framer-motion";
 import { styled, Theme } from "@mui/material/styles";
-import { Box, SxProps } from "@mui/material";
+import { Box, CircularProgress, SxProps } from "@mui/material";
 // import Logo from "../logo";
 import ProgressBar from "../progress-bar";
 import { bgBlur } from "../../utils/cssStyles";
@@ -12,6 +12,7 @@ const StyledRoot = styled("div")(({ theme }) => ({
     color: theme.palette.background.default,
   }),
   top: 0,
+  left: 0,
   zIndex: 9999,
   position: "fixed",
   width: "100%",
@@ -43,8 +44,7 @@ export default function LoadingScreen({ sx }: Props) {
             repeat: Infinity,
           }}
         >
-          test
-          {/* <Logo single sx={{ width: 128, height: 128 }} /> */}
+          <CircularProgress />
         </m.div>
       </StyledRoot>
 
