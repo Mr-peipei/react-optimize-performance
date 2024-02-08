@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/react", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:11.11.3"],\
             ["@emotion/styled", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:11.11.0"],\
             ["@mui/material", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.15.7"],\
+            ["@tanstack/react-query", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.18.1"],\
             ["@types/nprogress", "npm:0.2.3"],\
             ["@types/react", "npm:18.2.48"],\
             ["@types/react-dom", "npm:18.2.18"],\
@@ -1463,6 +1464,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-x64-msvc-npm-4.9.6-416b5a71e5/node_modules/@rollup/rollup-win32-x64-msvc/",\
           "packageDependencies": [\
             ["@rollup/rollup-win32-x64-msvc", "npm:4.9.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tanstack/query-core", [\
+        ["npm:5.18.1", {\
+          "packageLocation": "./.yarn/cache/@tanstack-query-core-npm-5.18.1-9145343368-dd831e508f.zip/node_modules/@tanstack/query-core/",\
+          "packageDependencies": [\
+            ["@tanstack/query-core", "npm:5.18.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tanstack/react-query", [\
+        ["npm:5.18.1", {\
+          "packageLocation": "./.yarn/cache/@tanstack-react-query-npm-5.18.1-616445cd08-d24d79b7bf.zip/node_modules/@tanstack/react-query/",\
+          "packageDependencies": [\
+            ["@tanstack/react-query", "npm:5.18.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.18.1", {\
+          "packageLocation": "./.yarn/__virtual__/@tanstack-react-query-virtual-452949ff1d/0/cache/@tanstack-react-query-npm-5.18.1-616445cd08-d24d79b7bf.zip/node_modules/@tanstack/react-query/",\
+          "packageDependencies": [\
+            ["@tanstack/react-query", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.18.1"],\
+            ["@tanstack/query-core", "npm:5.18.1"],\
+            ["@types/react", "npm:18.2.48"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3849,6 +3882,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/react", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:11.11.3"],\
             ["@emotion/styled", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:11.11.0"],\
             ["@mui/material", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.15.7"],\
+            ["@tanstack/react-query", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.18.1"],\
             ["@types/nprogress", "npm:0.2.3"],\
             ["@types/react", "npm:18.2.48"],\
             ["@types/react-dom", "npm:18.2.18"],\
