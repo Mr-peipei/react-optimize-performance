@@ -3,5 +3,7 @@ export const paths = {
   home: "/home",
   suspense: {
     always: "/suspense/always",
+    legacy: "/suspense/legacy",
+    new: "/suspense/new",
   },
 };
