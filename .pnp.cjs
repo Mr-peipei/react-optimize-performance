@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.56.0"],\
             ["eslint-plugin-react-hooks", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:0.4.5"],\
+            ["formik", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:2.4.5"],\
             ["framer-motion", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:11.0.3"],\
             ["nprogress", "npm:0.2.0"],\
             ["react", "npm:18.2.0"],\
@@ -50,7 +51,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-error-boundary", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:4.0.12"],\
             ["react-router-dom", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:6.22.0"],\
             ["typescript", "patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-            ["vite", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.0.12"]\
+            ["vite", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.0.12"],\
+            ["yup", "npm:1.3.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1579,6 +1581,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/hoist-non-react-statics", [\
+        ["npm:3.3.5", {\
+          "packageLocation": "./.yarn/cache/@types-hoist-non-react-statics-npm-3.3.5-98b8d8e47b-b645b062a2.zip/node_modules/@types/hoist-non-react-statics/",\
+          "packageDependencies": [\
+            ["@types/hoist-non-react-statics", "npm:3.3.5"],\
+            ["@types/react", "npm:18.2.48"],\
+            ["hoist-non-react-statics", "npm:3.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/json-schema", [\
         ["npm:7.0.15", {\
           "packageLocation": "./.yarn/cache/@types-json-schema-npm-7.0.15-fd16381786-97ed0cb44d.zip/node_modules/@types/json-schema/",\
@@ -2434,6 +2447,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["deepmerge", [\
+        ["npm:2.2.1", {\
+          "packageLocation": "./.yarn/cache/deepmerge-npm-2.2.1-44c00cbffa-284b710650.zip/node_modules/deepmerge/",\
+          "packageDependencies": [\
+            ["deepmerge", "npm:2.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["delayed-stream", [\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/delayed-stream-npm-1.0.0-c5a4c4cc02-46fe6e83e2.zip/node_modules/delayed-stream/",\
@@ -2942,6 +2964,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["asynckit", "npm:0.4.0"],\
             ["combined-stream", "npm:1.0.8"],\
             ["mime-types", "npm:2.1.35"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["formik", [\
+        ["npm:2.4.5", {\
+          "packageLocation": "./.yarn/cache/formik-npm-2.4.5-d97cd46456-316c91fc4e.zip/node_modules/formik/",\
+          "packageDependencies": [\
+            ["formik", "npm:2.4.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:2.4.5", {\
+          "packageLocation": "./.yarn/__virtual__/formik-virtual-f033f529f8/0/cache/formik-npm-2.4.5-d97cd46456-316c91fc4e.zip/node_modules/formik/",\
+          "packageDependencies": [\
+            ["formik", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:2.4.5"],\
+            ["@types/hoist-non-react-statics", "npm:3.3.5"],\
+            ["@types/react", "npm:18.2.48"],\
+            ["deepmerge", "npm:2.2.1"],\
+            ["hoist-non-react-statics", "npm:3.3.2"],\
+            ["lodash", "npm:4.17.21"],\
+            ["lodash-es", "npm:4.17.21"],\
+            ["react", "npm:18.2.0"],\
+            ["react-fast-compare", "npm:2.0.4"],\
+            ["tiny-warning", "npm:1.0.3"],\
+            ["tslib", "npm:2.6.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3482,6 +3534,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash", [\
+        ["npm:4.17.21", {\
+          "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-eb835a2e51.zip/node_modules/lodash/",\
+          "packageDependencies": [\
+            ["lodash", "npm:4.17.21"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash-es", [\
+        ["npm:4.17.21", {\
+          "packageLocation": "./.yarn/cache/lodash-es-npm-4.17.21-b45832dfce-05cbffad6e.zip/node_modules/lodash-es/",\
+          "packageDependencies": [\
+            ["lodash-es", "npm:4.17.21"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.merge", [\
         ["npm:4.6.2", {\
           "packageLocation": "./.yarn/cache/lodash.merge-npm-4.6.2-77cb4416bf-ad580b4bdb.zip/node_modules/lodash.merge/",\
@@ -3997,6 +4067,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["property-expr", [\
+        ["npm:2.0.6", {\
+          "packageLocation": "./.yarn/cache/property-expr-npm-2.0.6-2a0857ed05-89977f4bb2.zip/node_modules/property-expr/",\
+          "packageDependencies": [\
+            ["property-expr", "npm:2.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["proxy-from-env", [\
         ["npm:1.1.0", {\
           "packageLocation": "./.yarn/cache/proxy-from-env-npm-1.1.0-c13d07f26b-ed7fcc2ba0.zip/node_modules/proxy-from-env/",\
@@ -4081,6 +4160,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-fast-compare", [\
+        ["npm:2.0.4", {\
+          "packageLocation": "./.yarn/cache/react-fast-compare-npm-2.0.4-ab3f6356e2-06046595f9.zip/node_modules/react-fast-compare/",\
+          "packageDependencies": [\
+            ["react-fast-compare", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-is", [\
         ["npm:16.13.1", {\
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
@@ -4117,6 +4205,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.56.0"],\
             ["eslint-plugin-react-hooks", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:0.4.5"],\
+            ["formik", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:2.4.5"],\
             ["framer-motion", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:11.0.3"],\
             ["nprogress", "npm:0.2.0"],\
             ["react", "npm:18.2.0"],\
@@ -4124,7 +4213,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-error-boundary", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:4.0.12"],\
             ["react-router-dom", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:6.22.0"],\
             ["typescript", "patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-            ["vite", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.0.12"]\
+            ["vite", "virtual:b506de12aafb8aca9924acb88b2677f1c7567ee467c810e34ce3b182d44b185cfc7ed8e10d7ecb26f524c142e411e7f144fe485e4f681e31be30647fa3b73aee#npm:5.0.12"],\
+            ["yup", "npm:1.3.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -4561,6 +4651,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["tiny-case", [\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/tiny-case-npm-1.0.3-8c9747c74e-3f7a30c39d.zip/node_modules/tiny-case/",\
+          "packageDependencies": [\
+            ["tiny-case", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["tiny-warning", [\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/tiny-warning-npm-1.0.3-750b7a07c4-da62c4acac.zip/node_modules/tiny-warning/",\
+          "packageDependencies": [\
+            ["tiny-warning", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["to-fast-properties", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/to-fast-properties-npm-2.0.0-0dc60cc481-be2de62fe5.zip/node_modules/to-fast-properties/",\
@@ -4576,6 +4684,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["to-regex-range", "npm:5.0.1"],\
             ["is-number", "npm:7.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["toposort", [\
+        ["npm:2.0.2", {\
+          "packageLocation": "./.yarn/cache/toposort-npm-2.0.2-d472329c7d-d64c74b570.zip/node_modules/toposort/",\
+          "packageDependencies": [\
+            ["toposort", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4669,6 +4786,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/type-fest-npm-0.20.2-b36432617f-4fb3272df2.zip/node_modules/type-fest/",\
           "packageDependencies": [\
             ["type-fest", "npm:0.20.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.19.0", {\
+          "packageLocation": "./.yarn/cache/type-fest-npm-2.19.0-918b953248-a4ef07ece2.zip/node_modules/type-fest/",\
+          "packageDependencies": [\
+            ["type-fest", "npm:2.19.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4863,6 +4987,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip/node_modules/yocto-queue/",\
           "packageDependencies": [\
             ["yocto-queue", "npm:0.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["yup", [\
+        ["npm:1.3.3", {\
+          "packageLocation": "./.yarn/cache/yup-npm-1.3.3-bef3f67698-7b9e19fedc.zip/node_modules/yup/",\
+          "packageDependencies": [\
+            ["yup", "npm:1.3.3"],\
+            ["property-expr", "npm:2.0.6"],\
+            ["tiny-case", "npm:1.0.3"],\
+            ["toposort", "npm:2.0.2"],\
+            ["type-fest", "npm:2.19.0"]\
           ],\
           "linkType": "HARD"\
         }]\

@@ -1,7 +1,9 @@
+import { Link as RouterLink } from "react-router-dom";
 import {
   Box,
   Divider,
   Drawer,
+  Link,
   List,
   ListItem,
   ListItemButton,
@@ -13,6 +15,7 @@ import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import { HEADER } from "../config-global";
+import { paths } from "../routes/paths";
 
 const drawerWidth = 240;
 
@@ -48,7 +51,47 @@ export default function MainLayout() {
           }}
           open
         >
-          {drawer}
+          <Stack>
+            <Toolbar
+              sx={{
+                height: {
+                  xs: HEADER.H_MOBILE,
+                  md: HEADER.H_MAIN_DESKTOP,
+                },
+              }}
+            >
+              <Stack spacing={1} direction="row" alignItems="center">
+                <Link
+                  to={paths.top}
+                  component={RouterLink}
+                  variant="subtitle2"
+                  sx={{ color: "black" }}
+                >
+                  Home
+                </Link>
+              </Stack>
+            </Toolbar>
+            <Divider />
+            <List>
+              {["Inbox", "Starred", "Send email", "Drafts"].map((text) => (
+                <ListItem key={text} disablePadding>
+                  <ListItemButton>
+                    <ListItemText primary={text} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+            <Divider />
+            <List>
+              {["All mail", "Trash", "Spam"].map((text) => (
+                <ListItem key={text} disablePadding>
+                  <ListItemButton>
+                    <ListItemText primary={text} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+          </Stack>
         </Drawer>
       </Box>
 
@@ -66,36 +109,3 @@ export default function MainLayout() {
     </Box>
   );
 }
-
-const drawer = (
-  <Stack>
-    <Toolbar
-      sx={{
-        height: {
-          xs: HEADER.H_MOBILE,
-          md: HEADER.H_MAIN_DESKTOP,
-        },
-      }}
-    />
-    <Divider />
-    <List>
-      {["Inbox", "Starred", "Send email", "Drafts"].map((text) => (
-        <ListItem key={text} disablePadding>
-          <ListItemButton>
-            <ListItemText primary={text} />
-          </ListItemButton>
-        </ListItem>
-      ))}
-    </List>
-    <Divider />
-    <List>
-      {["All mail", "Trash", "Spam"].map((text) => (
-        <ListItem key={text} disablePadding>
-          <ListItemButton>
-            <ListItemText primary={text} />
-          </ListItemButton>
-        </ListItem>
-      ))}
-    </List>
-  </Stack>
-);

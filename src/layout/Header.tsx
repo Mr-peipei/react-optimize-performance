@@ -27,9 +27,9 @@ export default function Header() {
             to={paths.top}
             component={RouterLink}
             variant="subtitle2"
-            color="inherit"
+            sx={{ color: "black" }}
           >
-            Home
+            Top
           </Link>
         </Stack>
       </Toolbar>
