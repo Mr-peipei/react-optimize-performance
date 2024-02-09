@@ -20,3 +20,6 @@ export const AlwaysSuspensePage = Loadable(
 export const SuspenseLoadingPage = Loadable(
   lazy(() => import("../pages/suspense/SuspenseLoadingPage"))
 );
+export const SuspenseWithAxiosPage = Loadable(
+  lazy(() => import("../pages/suspense/SuspenseWithAxiosPage"))
+);

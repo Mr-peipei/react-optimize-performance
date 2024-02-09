@@ -5,5 +5,6 @@ export const paths = {
     always: "/suspense/always",
     legacy: "/suspense/legacy",
     new: "/suspense/new",
+    axios: "/suspense/axios",
   },
 };

@@ -3,6 +3,7 @@ import {
   AlwaysSuspensePage,
   HomePage,
   SuspenseLoadingPage,
+  SuspenseWithAxiosPage,
   TopPage,
 } from "./elements";
 import MainLayout from "../layout";
@@ -19,6 +20,7 @@ export default function Router() {
         { path: paths.suspense.always, element: <AlwaysSuspensePage /> },
         { path: paths.suspense.legacy, element: <LegacyLoadingPage /> },
         { path: paths.suspense.new, element: <SuspenseLoadingPage /> },
+        { path: paths.suspense.axios, element: <SuspenseWithAxiosPage /> },
       ],
     },
   ]);

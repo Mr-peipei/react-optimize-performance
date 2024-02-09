@@ -47,6 +47,14 @@ const TopPage: React.FC = () => {
       >
         Suspense使う
       </Button>
+      <Button
+        onClick={() => {
+          navigation(paths.suspense.axios);
+        }}
+        variant="contained"
+      >
+        Suspense + Axios
+      </Button>
 
       <button onClick={loadHeavyComponent}>Load Heavy</button>
       {isHeavyVisible && <LazyLoad />}

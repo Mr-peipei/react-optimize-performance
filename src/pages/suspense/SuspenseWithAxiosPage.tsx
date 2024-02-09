@@ -20,17 +20,13 @@ const fetchData = () => {
   });
 };
 
-const AlwaysSuspensePage: React.FC = () => {
+const SuspenseWithAxiosPage: React.FC = () => {
   const [data, setData] = useState<User | undefined>();
 
   useEffect(() => {
     const fetchDataAsync = async () => {
-      try {
-        const result = await fetchData();
-        setData(result);
-      } catch (e) {
-        console.log(e);
-      }
+      const result = await fetchData();
+      setData(result);
     };
     fetchDataAsync();
   }, []);
@@ -45,4 +41,4 @@ const AlwaysSuspensePage: React.FC = () => {
   );
 };
 
-export default AlwaysSuspensePage;
+export default SuspenseWithAxiosPage;
