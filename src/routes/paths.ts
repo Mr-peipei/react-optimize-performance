@@ -7,6 +7,8 @@ export const paths = {
   suspense_axios: "/suspense/axios",
   form_formik: "/form/formik",
   optimized_form_formik: "/optimized-form/formik",
+  list: "/list",
+  optimized_list: "/optimized-list",
 };
 
 export type PathType = keyof typeof paths;

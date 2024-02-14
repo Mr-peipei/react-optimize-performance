@@ -3,7 +3,9 @@ import { LegacyLoadingPage } from "../pages/suspense/LegacyLoadingPage";
 import {
   AlwaysSuspensePage,
   HomePage,
+  ListPage,
   OptimizedFormikFormPage,
+  OptimizedListPage,
   SuspenseLoadingPage,
   SuspenseWithAxiosPage,
   TopPage,
@@ -52,5 +54,15 @@ export const elements: ComponentDataset[] = [
     path: "optimized_form_formik",
     element: <OptimizedFormikFormPage />,
     title: "分割後のFormikフォーム",
+  },
+  {
+    path: "list",
+    element: <ListPage />,
+    title: "リスト",
+  },
+  {
+    path: "optimized_list",
+    element: <OptimizedListPage />,
+    title: "仮想リスト",
   },
 ];

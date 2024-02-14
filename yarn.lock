@@ -1106,6 +1106,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:5.20.5":
+  version: 5.20.5
+  resolution: "@tanstack/query-core@npm:5.20.5"
+  checksum: ae7f45fe2f1b5278cc35c9c276e475c19accad897641b4cc02f25d446d796e804f767d3de891ce73130a42d3707e6b54459c9e109fcc00bc5ad75f6cdac263d8
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-persist-client-core@npm:5.20.5":
+  version: 5.20.5
+  resolution: "@tanstack/query-persist-client-core@npm:5.20.5"
+  dependencies:
+    "@tanstack/query-core": 5.20.5
+  checksum: 0389584df6de7768ce303d446186081addebe90a9e8de5efd7a9b4cbb4216062da5438b60b3170acb7f7af6c09c5f1497398e2a6f7cbea57030b5c3a041d5728
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-sync-storage-persister@npm:^5.20.5":
+  version: 5.20.5
+  resolution: "@tanstack/query-sync-storage-persister@npm:5.20.5"
+  dependencies:
+    "@tanstack/query-core": 5.20.5
+    "@tanstack/query-persist-client-core": 5.20.5
+  checksum: 58cec4f5f8977f8948d229c6292c8a641a53ef7e4f00fb3695fafbad228d41aa2ffdb4d34a8c0bda84b6b1a23170a5a4a90ceffcd66ae973ec7fb7b0ce57a2e2
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query-persist-client@npm:^5.20.5":
+  version: 5.20.5
+  resolution: "@tanstack/react-query-persist-client@npm:5.20.5"
+  dependencies:
+    "@tanstack/query-persist-client-core": 5.20.5
+  peerDependencies:
+    "@tanstack/react-query": ^5.20.5
+    react: ^18.0.0
+  checksum: 958a3b47c52cffc7790981643efc64f95a49da297fda1573fdd0839df048e3f53f2f8aa405d898f4e3bf5743f0d8e2bf2022b75400678959764476f27280666f
+  languageName: node
+  linkType: hard
+
 "@tanstack/react-query@npm:^5.18.1":
   version: 5.18.1
   resolution: "@tanstack/react-query@npm:5.18.1"
@@ -1209,6 +1247,15 @@ __metadata:
   dependencies:
     "@types/react": "*"
   checksum: 8e3da404c980e2b2a76da3852f812ea6d8b9d0e7f5923fbaf3bfbbbfa1d59116ff91c129de8f68e9b7668a67ae34484fe9df74d5a7518cf8591ec07a0c4dad57
+  languageName: node
+  linkType: hard
+
+"@types/react-infinite-scroller@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "@types/react-infinite-scroller@npm:1.2.5"
+  dependencies:
+    "@types/react": "*"
+  checksum: 8b56f63c35802d2593cc25b3ab03bfbeceb2a5379997364fb5cea414cc8690341fbf3902d8fc7a6db43f87c144276009cb4a7f3388f1a52091ac3a4fd7de7d33
   languageName: node
   linkType: hard
 
@@ -3273,7 +3320,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3342,6 +3389,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-infinite-scroller@npm:^1.2.6":
+  version: 1.2.6
+  resolution: "react-infinite-scroller@npm:1.2.6"
+  dependencies:
+    prop-types: ^15.5.8
+  peerDependencies:
+    react: ^0.14.9 || ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 5f5aae76c484b4039bada87070d5f8c54d2786697ae600be19a68f4e85158ff550122f15dccc5997d8b01fa487da47b9ffbc3e9d9a29f2cf71c77275f72551fd
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -3364,10 +3422,13 @@ __metadata:
     "@emotion/styled": ^11.11.0
     "@mui/material": ^5.15.7
     "@tanstack/eslint-plugin-query": ^5.18.1
+    "@tanstack/query-sync-storage-persister": ^5.20.5
     "@tanstack/react-query": ^5.18.1
+    "@tanstack/react-query-persist-client": ^5.20.5
     "@types/nprogress": ^0.2.3
     "@types/react": ^18.2.43
     "@types/react-dom": ^18.2.17
+    "@types/react-infinite-scroller": ^1.2.5
     "@typescript-eslint/eslint-plugin": ^6.14.0
     "@typescript-eslint/parser": ^6.14.0
     "@vitejs/plugin-react": ^4.2.1
@@ -3381,6 +3442,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-error-boundary: ^4.0.12
+    react-infinite-scroller: ^1.2.6
     react-router-dom: ^6.22.0
     typescript: ^5.2.2
     vite: ^5.0.8

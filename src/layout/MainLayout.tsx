@@ -33,7 +33,13 @@ export default function MainLayout() {
   }, []);
 
   return (
-    <Box display="flex" flexDirection="column" height={height}>
+    <Box
+      display="flex"
+      flexDirection="column"
+      height={height}
+      flex={1}
+      width="100%"
+    >
       <Header />
       <Box
         component="nav"
@@ -99,6 +105,7 @@ export default function MainLayout() {
         component="main"
         sx={{
           flexGrow: 1,
+          width: "100%",
           marginLeft: `${drawerWidth}px`,
           p: 3,
           mt: `${HEADER.H_MAIN_DESKTOP}px`,

@@ -23,7 +23,10 @@ export const SuspenseLoadingPage = Loadable(
 export const SuspenseWithAxiosPage = Loadable(
   lazy(() => import("../pages/suspense/SuspenseWithAxiosPage"))
 );
-
 export const OptimizedFormikFormPage = Loadable(
   lazy(() => import("../pages/form/OptimizedFormikFormPage"))
+);
+export const ListPage = Loadable(lazy(() => import("../pages/list/ListPage")));
+export const OptimizedListPage = Loadable(
+  lazy(() => import("../pages/list/OptimizedListPage"))
 );
