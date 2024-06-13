@@ -1,7 +1,7 @@
-import { ErrorBoundary } from "react-error-boundary";
 import { BrowserRouter } from "react-router-dom";
 import Router from "./routes";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ErrorBoundary } from "./provider/ErrorBoundary";
 // import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
 // import { createSyncStoragePersister } from "@tanstack/query-sync-storage-persister";
 
@@ -19,7 +19,7 @@ const queryClient = new QueryClient({
 
 export const App: React.FC = () => {
   return (
-    <ErrorBoundary fallback={<div>dummy</div>}>
+    <ErrorBoundary>
       {/* <PersistQueryClientProvider
         client={queryClient}
         persistOptions={{ persister }}
